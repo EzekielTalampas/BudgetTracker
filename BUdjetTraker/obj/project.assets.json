@@ -1860,11 +1860,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\BUdjetTraker\\BUdjetTraker\\BUdjetTraker.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\BudgetTracker\\BUdjetTraker\\BUdjetTraker.csproj",
       "projectName": "BUdjetTraker",
-      "projectPath": "C:\\Users\\User\\Desktop\\BUdjetTraker\\BUdjetTraker\\BUdjetTraker.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\BudgetTracker\\BUdjetTraker\\BUdjetTraker.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\BUdjetTraker\\BUdjetTraker\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\BudgetTracker\\BUdjetTraker\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1900,9 +1900,21 @@
             "target": "Package",
             "version": "[1.2.0.5, )"
           },
+          "Xamarin.AndroidX.AppCompat": {
+            "target": "Package",
+            "version": "[1.2.0.5, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.6.1, )"
+          },
+          "Xamarin.Essentials": {
+            "target": "Package",
+            "version": "[1.6.1, )"
+          },
+          "Xamarin.Google.Android.Material": {
+            "target": "Package",
+            "version": "[1.0.0.1, )"
           },
           "Xamarin.Google.Android.Material": {
             "target": "Package",

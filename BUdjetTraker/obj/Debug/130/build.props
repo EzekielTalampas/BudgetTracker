@@ -25,11 +25,11 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=638567688704927126
+_nugetassetstimestamp=638570285017913079
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a
 x86
 x86_64
 androidmanifestplaceholders=
-projectfullpath=c:\users\user\desktop\budjettraker\budjettraker\budjettraker.csproj
+projectfullpath=c:\users\user\desktop\budgettracker\budjettraker\budjettraker.csproj

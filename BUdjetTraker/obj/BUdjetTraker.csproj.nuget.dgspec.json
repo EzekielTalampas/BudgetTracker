@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\BUdjetTraker\\BUdjetTraker\\BUdjetTraker.csproj": {}
+    "C:\\Users\\User\\Desktop\\BudgetTracker\\BUdjetTraker\\BUdjetTraker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\BUdjetTraker\\BUdjetTraker\\BUdjetTraker.csproj": {
+    "C:\\Users\\User\\Desktop\\BudgetTracker\\BUdjetTraker\\BUdjetTraker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\BUdjetTraker\\BUdjetTraker\\BUdjetTraker.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\BudgetTracker\\BUdjetTraker\\BUdjetTraker.csproj",
         "projectName": "BUdjetTraker",
-        "projectPath": "C:\\Users\\User\\Desktop\\BUdjetTraker\\BUdjetTraker\\BUdjetTraker.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\BudgetTracker\\BUdjetTraker\\BUdjetTraker.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\BUdjetTraker\\BUdjetTraker\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\BudgetTracker\\BUdjetTraker\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

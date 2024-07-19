@@ -34,8 +34,7 @@ namespace BUdjetTraker
         }
         public void gotoHome(object sender, EventArgs e)
         {
-            i = new Intent(this, typeof(MainActivity));
-            StartActivity(i);
+            Finish();
         }
 
 

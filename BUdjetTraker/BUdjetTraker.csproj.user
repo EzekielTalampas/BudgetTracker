@@ -6,6 +6,6 @@
     <ActiveDebugProfile>Pixel 5 - API 34 %28Android 14.0 - API 34%29</ActiveDebugProfile>
     <DefaultDevice>pixel_5_-_api_34</DefaultDevice>
     <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
-    <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
+    <AndroidDesignerPreferredDevice>pixel</AndroidDesignerPreferredDevice>
   </PropertyGroup>
 </Project>
