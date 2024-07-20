@@ -60,6 +60,7 @@ namespace BUdjetTraker {
                 ShowAmountDialog("Add Amount", (addedAmount) =>
                 {
                     cost += addedAmount;
+                    total.Text = (double.Parse(total.Text) + addedAmount).ToString();
                     new XampProperties($"update.php?username={user}&category={name}&cost={cost}").CreateResponse();
                     expenseTextView.Text = $"{name}: ₱ {cost:0.00}";
                     //code here to save
@@ -71,8 +72,9 @@ namespace BUdjetTraker {
             {
                 ShowAmountDialog("Subtract Amount", (subtractedAmount) =>
                 {
+                    total.Text = (double.Parse(total.Text) - cost).ToString(); 
                     cost = Math.Max(0, cost - subtractedAmount);
-                    total.Text = (double.Parse(total.Text)).ToString(); //STOPPED HERE
+                    total.Text = (double.Parse(total.Text) + cost).ToString(); 
                     new XampProperties($"update.php?username={user}&category={name}&cost={cost}").CreateResponse();
                     expenseTextView.Text = $"{name}: ₱ {cost:0.00}";
                     //code here to save

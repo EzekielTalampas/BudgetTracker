@@ -45,16 +45,21 @@ namespace BUdjetTraker {
                     totalCost += cost;
                     ExpenseTab _tab = new ExpenseTab(root[i].GetProperty("category").ToString(), cost.ToString(), this, expenseContainer, username);
                     _tab.AddExpense();
+                    _tab.SetTotalCost(totalAmountTextView);
                 }
             }
             totalAmountTextView.Text = totalCost.ToString();
 
             //sumbtn.Click += gotoSum;
             addButton.Click += (s, e) => {
-                ExpenseTab _tab = new ExpenseTab(expenseNameEditText.Text, "0.00", this, expenseContainer, username);
+                string category = expenseNameEditText.Text;
+                ExpenseTab _tab = new ExpenseTab(category, "0.00", this, expenseContainer, username);
                 _tab.AddExpense();
+                _tab.SetTotalCost(totalAmountTextView);
+                String results = new XampProperties("add.php?username=" + username + "&category=" + category + "&cost=0").CreateResponse();
             };
 
+            homebtn.Click += (s, e) => Finish();
         }
 
         //public void gotoSum(object sender, EventArgs e) {
