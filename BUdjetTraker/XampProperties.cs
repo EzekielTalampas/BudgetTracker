@@ -15,7 +15,8 @@ namespace BUdjetTraker {
     internal class XampProperties {
 
         string phpCommand;
-        string ipAddress = "http://192.168.1.179:8080/";
+        string ipAddress = "http://192.168.1.179:8080/budjetTracker/";
+        //string ipAddress = "http://127.0.0.1:8080/";
         public XampProperties(string phpCommand) {
             this.phpCommand = phpCommand;
         }

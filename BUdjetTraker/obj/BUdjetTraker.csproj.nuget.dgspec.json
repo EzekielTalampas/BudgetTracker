@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\BudgetTracker\\BUdjetTraker\\BUdjetTraker.csproj": {}
+    "D:\\Github Repos\\fork\\BudgetTracker\\BUdjetTraker\\BUdjetTraker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\BudgetTracker\\BUdjetTraker\\BUdjetTraker.csproj": {
+    "D:\\Github Repos\\fork\\BudgetTracker\\BUdjetTraker\\BUdjetTraker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\BudgetTracker\\BUdjetTraker\\BUdjetTraker.csproj",
+        "projectUniqueName": "D:\\Github Repos\\fork\\BudgetTracker\\BUdjetTraker\\BUdjetTraker.csproj",
         "projectName": "BUdjetTraker",
-        "projectPath": "C:\\Users\\User\\Desktop\\BudgetTracker\\BUdjetTraker\\BUdjetTraker.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\BudgetTracker\\BUdjetTraker\\obj\\",
+        "projectPath": "D:\\Github Repos\\fork\\BudgetTracker\\BUdjetTraker\\BUdjetTraker.csproj",
+        "packagesPath": "C:\\Users\\Kazumi\\.nuget\\packages\\",
+        "outputPath": "D:\\Github Repos\\fork\\BudgetTracker\\BUdjetTraker\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kazumi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,16 +33,15 @@
           "monoandroid13.0": {
             "projectReferences": {}
           }
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
         "monoandroid13.0": {
           "dependencies": {
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
             "Xamarin.AndroidX.AppCompat": {
               "target": "Package",
               "version": "[1.2.0.5, )"

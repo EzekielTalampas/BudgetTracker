@@ -56,7 +56,9 @@
         android:id="@+id/expenseContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" />
+        android:orientation="vertical">
+
+    </LinearLayout>
         
 
     <Button
@@ -68,13 +70,4 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
-
-    <Button
-        android:id="@+id/sumButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Summary"
-        android:background="#212121"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp" />
 </LinearLayout>

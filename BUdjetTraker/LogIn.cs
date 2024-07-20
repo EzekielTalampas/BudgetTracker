@@ -34,12 +34,12 @@ namespace BUdjetTraker {
 
         public void login(string cmd, string[] message) {
             string[] txtField = { username.Text, password.Text };
-            if (txtField.All(item => string.IsNullOrWhiteSpace(item))) {
+            if (txtField.Any(item => string.IsNullOrWhiteSpace(item))) {
                 Toast.MakeText(this, "All fields must be filled out!", ToastLength.Long).Show();
                 return;
             }
 
-            string request = new XampProperties($"budjetTracker/{cmd}.php?username=" + username.Text + "&password" + password.Text).CreateResponse();
+            string request = new XampProperties($"{cmd}.php?username=" + username.Text + "&password=" + password.Text).CreateResponse();
             if (request.Contains("accept")) {
                 Toast.MakeText(this, message[0], ToastLength.Long).Show();
                 Intent i = new Intent(this, typeof(MainActivity));
