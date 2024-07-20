@@ -53,10 +53,21 @@ namespace BUdjetTraker {
             //sumbtn.Click += gotoSum;
             addButton.Click += (s, e) => {
                 string category = expenseNameEditText.Text;
-                ExpenseTab _tab = new ExpenseTab(category, "0.00", this, expenseContainer, username);
-                _tab.AddExpense();
-                _tab.SetTotalCost(totalAmountTextView);
+
+                if (string.IsNullOrWhiteSpace(category)) {
+                    Toast.MakeText(this, "Name must be filled out!", ToastLength.Long).Show();
+                    return;
+                }
+
                 String results = new XampProperties("add.php?username=" + username + "&category=" + category + "&cost=0").CreateResponse();
+                if (results.Contains("accept")) {
+                    Toast.MakeText(this, "Added!", ToastLength.Long).Show();
+                    ExpenseTab _tab = new ExpenseTab(category, "0.00", this, expenseContainer, username);
+                    _tab.AddExpense();
+                    _tab.SetTotalCost(totalAmountTextView);
+                } else {
+                    Toast.MakeText(this, "Failed!", ToastLength.Long).Show();
+                }
             };
 
             homebtn.Click += (s, e) => Finish();
