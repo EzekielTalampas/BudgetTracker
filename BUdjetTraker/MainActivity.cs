@@ -62,11 +62,6 @@ namespace BUdjetTraker {
             homebtn.Click += (s, e) => Finish();
         }
 
-        //public void gotoSum(object sender, EventArgs e) {
-        //    i = new Intent(this, typeof(Summary));
-        //    StartActivity(i);
-        //}
-
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults) {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);

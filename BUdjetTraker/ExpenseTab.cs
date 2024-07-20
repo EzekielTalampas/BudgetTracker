@@ -52,6 +52,16 @@ namespace BUdjetTraker {
                 Text = "-",
                 LayoutParameters = new LinearLayout.LayoutParams(100, LinearLayout.LayoutParams.WrapContent, 0)
             };
+            
+
+            // Create a Button to delete
+            Button delete = new Button(_MainActivity) {
+                Text = "Del",
+                LayoutParameters = new LinearLayout.LayoutParams(100, LinearLayout.LayoutParams.WrapContent, 0)
+            };
+            delete.SetBackgroundColor(Android.Graphics.Color.Red);
+            delete.SetTextColor(Android.Graphics.Color.White);
+
 
 
             // Set up click event for the increase button
@@ -81,10 +91,20 @@ namespace BUdjetTraker {
                 });
             };
 
+
+            //set up click event for delete
+            delete.Click += (s, args) => {
+                total.Text = (double.Parse(total.Text) - cost).ToString();
+                expenseContainer.RemoveView(expenseLayout);
+                new XampProperties($"delete.php?username={user}&category={name}").CreateResponse();
+
+            };
+
             // Add the TextView and Buttons to the expense layout
             expenseLayout.AddView(expenseTextView);
             expenseLayout.AddView(decreaseButton);
             expenseLayout.AddView(increaseButton);
+            expenseLayout.AddView(delete);
 
             // Add the expense layout to the container
             expenseContainer.AddView(expenseLayout);
